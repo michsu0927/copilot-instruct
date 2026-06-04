@@ -39,9 +39,10 @@ AGENTS.md
 .github/
 ├── copilot-instructions.md
 ├── instructions/
+│   ├── markdown.instructions.md
 │   ├── rust.instructions.md
-│   ├── src.instructions.md
-│   └── deps.instructions.md
+│   ├── instructions-folder.instructions.md
+│   └── prompts-folder.instructions.md
 └── prompts/
     ├── plan-change.prompt.md
     ├── implement-wrapper-change.prompt.md
@@ -84,7 +85,6 @@ docs/
 
 如果你打算把這個 repo 作為公開範本分享，建議再進一步：
 
-- 調整 instruction 檔名，讓檔名與內容更一致
 - 調整部分 prompt 名稱，避免殘留其他專案語境
 - 在 GitHub repo 補上 description 與 topics
 - 定期比對 GitHub 官方文件，避免內容過時

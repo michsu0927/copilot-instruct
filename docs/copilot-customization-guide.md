@@ -15,15 +15,18 @@ It is intended as a reusable starter for teams that want a structured customizat
 .github/
 ├── copilot-instructions.md
 ├── instructions/
+│   ├── markdown.instructions.md
 │   ├── rust.instructions.md
-│   ├── src.instructions.md
-│   └── deps.instructions.md
+│   ├── instructions-folder.instructions.md
+│   └── prompts-folder.instructions.md
 └── prompts/
     ├── plan-change.prompt.md
     ├── implement-wrapper-change.prompt.md
     ├── review-change.prompt.md
     └── create-tests.prompt.md
 AGENTS.md
+README.md
+README.zh-TW.md
 docs/
 └── copilot-customization-guide.md
 ```
@@ -55,6 +58,12 @@ Use them for:
 - file-type-specific guidance
 - directory-specific rules
 - narrow conventions that should not apply everywhere
+
+Examples in this repository:
+- `markdown.instructions.md` for Markdown documentation files
+- `rust.instructions.md` for Rust source files
+- `instructions-folder.instructions.md` for maintaining instruction files
+- `prompts-folder.instructions.md` for maintaining prompt files
 
 ### `.github/prompts/*.prompt.md`
 Reusable prompt entry points for common workflows.
@@ -98,6 +107,7 @@ To adapt this starter for another repo:
 3. rewrite `.github/copilot-instructions.md` for repo-wide conventions
 4. replace instruction files with repo-relevant scoped rules
 5. replace prompts with workflows that match the actual project
+6. keep both README files aligned if you maintain bilingual documentation
 
 ## Notes
 - Keep prompts task-oriented.

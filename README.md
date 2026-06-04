@@ -36,9 +36,10 @@ AGENTS.md
 .github/
 ├── copilot-instructions.md
 ├── instructions/
+│   ├── markdown.instructions.md
 │   ├── rust.instructions.md
-│   ├── src.instructions.md
-│   └── deps.instructions.md
+│   ├── instructions-folder.instructions.md
+│   └── prompts-folder.instructions.md
 └── prompts/
     ├── plan-change.prompt.md
     ├── implement-wrapper-change.prompt.md
@@ -78,7 +79,6 @@ A simple prompt-based workflow for this repository is:
 ## Recommended next improvements
 
 If you plan to share this repository publicly, consider these follow-up changes:
-- rename the instruction files so their names match their actual purpose
 - rename prompts whose names still reflect an earlier repository context
 - add repository topics and description on GitHub
 - keep the guide aligned with current GitHub documentation over time
